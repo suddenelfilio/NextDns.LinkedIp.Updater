@@ -1,0 +1,13 @@
+name: "NextDns LinkedIp Updater"
+description: "Update NextDns LinkedIp"
+type: "sw.application"
+joinable: false
+post-provisioning: >-
+data:
+  applicationEnvironmentVariables:
+    - nextdns__updatelink: "https://www.google.be"
+  defaultDeviceType: "raspberrypi3"
+  supportedDeviceTypes:
+    - "raspberrypi3"
+    - "raspberrypi4-64"
+version: 0.1.0

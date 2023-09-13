@@ -1,0 +1,9 @@
+﻿version: "2.1"
+
+services:
+  nextdns.linkedip.updater:
+    build:
+      context: .
+      dockerfile: ./NextDns.LinkedIp.Updater/Dockerfile
+    ports:
+      - "80:80"
